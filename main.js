@@ -24,38 +24,50 @@ var toggleXandO = function(event) {
   var target = event.target;
   if (counter%2 === 0) {
   	target.textContent = 'X';
-	target.classList.add('ex');
-	counter++;
-	console.log(counter);
+  	target.classList.add('ex');
+  	counter++;
+    target.removeEventListener('click', toggleXandO);
+  	console.log(counter);
   } else if (counter%2 === 1) {
   	target.textContent = 'O'; 
   	target.classList.add('oh');
   	counter++;
+    target.removeEventListener('click', toggleXandO);
   	console.log(counter);
+  };
   // } else {
   // 	removeToggle();
   // };
-  } else if (counter === 9) {
-  	console.log(counter + 'is at nine');
-  	removeToggle;
-
-  };
+  
+  // } else if (counter >= 9) {
+  // 	console.log(counter + 'is at nine');
+  // 	// removeToggle();
+  //   rowOne.removeEventListener('click', toggleXandO);
+  //   rowTwo.removeEventListener('click', toggleXandO);
+  //   rowThree.removeEventListener('click', toggleXandO);
+  //   rowFour.removeEventListener('click', toggleXandO);
+  //   rowFive.removeEventListener('click', toggleXandO);
+  //   rowSix.removeEventListener('click', toggleXandO);
+  //   rowSeven.removeEventListener('click', toggleXandO);
+  //   rowEight.removeEventListener('click', toggleXandO);
+  //   rowNine.removeEventListener('click', toggleXandO);
+  // };
 };
 
 
-var removeToggle = function() {
+// var removeToggle = function() {
 	
-	rowOne.removeEventListener('click', toggleXandO);
-	rowTwo.removeEventListener('click', toggleXandO);
-	rowThree.removeEventListener('click', toggleXandO);
-	rowFour.removeEventListener('click', toggleXandO);
-	rowFive.removeEventListener('click', toggleXandO);
-	rowSix.removeEventListener('click', toggleXandO);
-	rowSeven.removeEventListener('click', toggleXandO);
-	rowEight.removeEventListener('click', toggleXandO);
-	rowNine.removeEventListener('click', toggleXandO);
+	// rowOne.removeEventListener('click', toggleXandO);
+	// rowTwo.removeEventListener('click', toggleXandO);
+	// rowThree.removeEventListener('click', toggleXandO);
+	// rowFour.removeEventListener('click', toggleXandO);
+	// rowFive.removeEventListener('click', toggleXandO);
+	// rowSix.removeEventListener('click', toggleXandO);
+	// rowSeven.removeEventListener('click', toggleXandO);
+	// rowEight.removeEventListener('click', toggleXandO);
+	// rowNine.removeEventListener('click', toggleXandO);
    
-};
+// };
 // removeToggle();
 
 rowOne.addEventListener('click', toggleXandO);
