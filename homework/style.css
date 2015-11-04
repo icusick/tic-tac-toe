@@ -1,0 +1,84 @@
+
+
+
+.grid {
+	display: block;
+	height: 1000px;
+	width: 1000px;
+	/*border: solid black;*/
+}
+
+.col-1 {
+	width: 30%;
+	/*border: black;*/
+	/*height: 100%;*/
+	float: left;
+	border: solid black;
+}
+
+.col-2 {
+	width: 30%;
+	float: left;
+	border: solid black;
+}
+
+.col-3 {
+	width: 30%;
+	float: left;
+	border: solid black;
+}
+
+.row {
+	
+	height: 300px;
+	width: 300px;
+	border: solid black;
+	/*border: black;*/
+}
+
+#reload-button {
+	margin-top: 2em;
+	margin-left: 40em;
+}
+/*.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+.ex {
+	background: pink;
+	font-size: 80px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.oh {
+	background: blue;
+	font-size: 80px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
